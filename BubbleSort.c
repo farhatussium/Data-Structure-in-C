@@ -8,10 +8,15 @@ void swap(int *a, int *b){
 
 void BubbleSort(int a[], int n){
     for(int i = 0; i < n - 1; i++){
+        int swapped = 0;
         for(int j = 0; j < n - i - 1; j++){
             if(a[j] > a[j + 1]){
                 swap(&a[j], &a[j + 1]);
+                swapped = 1;
             }
+        }
+        if(!swapped){
+            return; // Array is already sorted
         }
     }
 }
