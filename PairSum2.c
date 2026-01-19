@@ -1,7 +1,6 @@
 #include <stdio.h>
 
-int main()
-{
+int main(){
     int arr[] = {1, 4, 6, 8, 3, 7};
     int n = sizeof(arr) / sizeof(arr[0]);
     int target = 10;
